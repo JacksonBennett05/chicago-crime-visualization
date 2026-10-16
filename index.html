@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chicago Home Thefts and Burglaries: Residences vs. Apartments</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container"> 
+        <h1>Chicago Home Thefts and Burglaries: Residences vs. Apartments</h1>
+        <p id="value"></p>
+        <div id="controls">
+        Arrest: <select id="arrestVariable" class="variable"></select>
+        Measure: <select id="metricVariable" class="variable"></select>
+        </div>
+        <div id="tooltip" style="display:none"></div> 
+        <div id="vis"></div>
+        <div id="writeup">
+            <h2>A brief introduction to your dataset</h2>
+            <p>
+                our visualization uses the City of Chicago's Crimes - 2001 to Present, which contains reported crime 
+                incidents thoughout Chicago. We specifically focused on the home thefts occuring in residences and appartments
+                to compare how the incidents differ over time and accross districts. The main varaibles we used were the year,
+                location type, police district and arrest status. On top of that we also calcualted the total number of
+                incidents and arrest rates to better understand the patterns in the data. 
+            </p>
+
+            <h2>Rationale for your design decisions</h2>
+            <p>
+                We chose a line chart to display the changes in thefts and burglaries over time because it is easy to identify
+                trends and compare residences with appartments. We also used a horizontal bar chart to compare incidents across the
+                different Chicago police districts allowing to see which had higher or lower totals. For colors we used 
+                green and blue for both charts to make the categories easy to distinguish. We considered using bar charts
+                for the yearly trends but decided a line chart would be better to show the changes over time. For interactions
+                we implemented dropdown menus that allow users to filter by arrest status and switch between number of incidents
+                and arrest rate. The users also can hover over the charts to get a more detailed information and click on a year
+                to focus and select a police district to filter the timeline. We chose these interactions because they allow
+                users to explore specific parts of the dataset without making an overly complicated visualization. 
+            </p>
+
+            <h2>References to data resources.</h2>
+            <p>
+                (Placeholder)
+            </p>
+
+            <h2>An overview of your development process</h2>
+            <p>
+                (Placeholder)
+            </p>
+            <h2>Brief Summary of AI Usage</h2>
+            <p>
+                We used Claude a little to help brainstorm and come up with ideas of what we should show from the data.
+                But that was as far as our AI usage went.
+            </p>
+        </div>
+    </div>
+
+]    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
